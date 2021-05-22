@@ -1,43 +1,34 @@
-# Desafio Front-end 👩‍💻
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Antes de mais nada, gostaríamos de agradecer pelo interesse em integrar nossa equipe! Abaixo estão as instruções para que você dê início ao teste.
+## Getting Started
 
-### Sobre a empresa 🚀
-Desde 2009 vivemos como loucos atrás de mentes apaixonadas por tecnologia, aqueles que nunca ficam contentes com o que sabem, eles sempre querem mais. Somos Beta porque nunca chegamos onde queremos e nunca sabemos o bastante, o conhecimento é nosso alimento, comemos todos os dias.
+First, run the development server:
 
-### Sobre o ambiente de trabalho ☕
-Atualmente contamos com cerca de 10 desenvolvedores entre juniors, plenos, mobile, front end e back end. Temos a cultura forte de compartilhar conhecimento, ajudar e incentivar a nossa equipe, além de contar piadas sem graças e mandar memes no Discord.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### Descrição 📰
-Para iniciar o desenvolvimento do teste, baixe o XD do design.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-### Arquivos
-- [Design](https://drive.google.com/file/d/1-sGLbiaqb_EIskfje4uJzsxSSxLW-wbe/view?usp=sharing) 
-- [Fontes](https://drive.google.com/file/d/1J0ZGvaQczX68yFLDnp9Ma0O2xmneh8Bb/view?usp=sharing)
-- [Fontes 2](https://drive.google.com/file/d/1SCIvJoXnRljB_5lfAH_snHnF8ohQNuOr/view?usp=sharing)
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-### Requisitos Técnicos 😁
-- ReactJS ✔
-- TypeScript ✔
-- Redux (useContext, useSelector) ✔
-- Styled Components ✔
-- Responsividade ✔
-- Organização do projeto ✔
-- Código limpo ✔
-- Documentação do projeto ✔
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-### Requisitos comportamentais
-- Aprendizado continuo;
-- Interesse por compartilhar experiências;
-- Comunicação;
-- Visão sistêmica.
+## Learn More
 
-### Diferenciais 💖
-- Local storage.
+To learn more about Next.js, take a look at the following resources:
 
-### Próximos passos
-1. Enviar o link do repositório para: yukihiro@mestresdaweb.com.br;
-2. Caso o código analisado passe pelo nosso review, entraremos em contato para uma segunda entrevista.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-![Alt Text](https://tenor.com/view/ednaldo-pereira-vale-nada-clone-worthless-funny-gif-17809469.gif)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
