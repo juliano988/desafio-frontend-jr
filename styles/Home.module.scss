@@ -12,6 +12,23 @@
     rgba(128, 128, 128, 0.2) 100%
   );
   margin-top: -10px;
+  opacity: 0;
+  animation-name: gradient_effect_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes gradient_effect_animation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .page_content_div {
@@ -32,10 +49,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0;
   transform: scale(1.05);
   animation-name: heroes_img_animation;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 @keyframes heroes_img_animation {
@@ -52,21 +71,22 @@
 
 .marvel_logo {
   position: relative;
-  top: 50vh;
-  left: 50vh;
+  top: calc(50vh - 50px);
+  left: 100vh;
   padding: 0px;
   animation-name: marvel_logo_animation;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 @keyframes marvel_logo_animation {
   0% {
-    top: 50vh;
-    left: 50vh;
+    top: calc(50vh - 50px);
+    left: 100vh;
   }
   50% {
-    top: 50vh;
+    top: calc(50vh - 50px);
     left: 10vh;
   }
   100% {
@@ -86,6 +106,20 @@
   p {
     color: gray;
   }
+  opacity: 0;
+  animation-name: above_marvel_logo_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes above_marvel_logo_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .login_form {
@@ -102,6 +136,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.submit_link{
+  color: white !important;
+  text-decoration: none;
 }
 
 .forgot_pass_link {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import { LoginCheckInput, LoginTextInput, MarvelLogoRedDiv, MarvelLogoText, SubmitBtn } from '../styled-components';
@@ -33,7 +34,11 @@ export default function Home(): JSX.Element {
                 <a className={styles.forgot_pass_link} href="">Esqueci a senha</a>
               </div>
 
-              <SubmitBtn type="button" >Enviar</SubmitBtn>
+              <SubmitBtn type="button" >
+                <Link href="/teste">
+                  <a className={styles.submit_link}>Entrar</a>
+                </Link>
+              </SubmitBtn>
 
               <div className={styles.create_acc_div}>
                 <p>Ainda não tem o login?</p>
