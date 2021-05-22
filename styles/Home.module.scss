@@ -1,0 +1,51 @@
+
+.gradient_effect{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(33,33,33,0.9) 70%, rgba(128,128,128,0.2) 100%);
+  margin-top: -10px;
+}
+
+.page_content_div{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.col1{
+  flex-basis: 50%;
+}
+
+.col2{
+  flex-basis: 50%;
+  background-image: url('../public/imgs/heroes_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.marvel_logo {
+  position: relative;
+  top: 50vh;
+  left: 50vh;
+  padding: 0px;
+  animation-name: marvel_logo_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes marvel_logo_animation {
+  0% {
+    top: 50vh;
+    left: 50vh;
+  }
+  50% {
+    top: 50vh;
+    left: 10vh;
+  }
+  100% {
+    top: 50px;
+    left: 10vh;
+  }
+}

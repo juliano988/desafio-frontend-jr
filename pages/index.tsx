@@ -1,7 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import React from 'react';
+import Head from 'next/head';
+import styles from '../styles/Home.module.scss';
+import { MarvelLogoRedDiv, MarvelLogoText } from '../styled-components';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
@@ -10,7 +12,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
+      <div className={styles.gradient_effect}></div>
+      
+      <div className={styles.page_content_div}>
+        <div className={styles.col1}>
+          <MarvelLogo />
+        </div>
+
+        <div className={styles.col2}>
+
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+function MarvelLogo() {
+  return (
+    <div className={styles.marvel_logo}>
+      <MarvelLogoRedDiv>
+        <MarvelLogoText>MARVEL</MarvelLogoText>
+      </MarvelLogoRedDiv>
     </div>
   )
 }
