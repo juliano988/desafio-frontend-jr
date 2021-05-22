@@ -1,0 +1,165 @@
+.gradient_effect {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1.05);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(33, 33, 33, 0.9) 70%,
+    rgba(128, 128, 128, 0.2) 100%
+  );
+  margin-top: -10px;
+  opacity: 0;
+  animation-name: gradient_effect_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes gradient_effect_animation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.page_content_div {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.col1 {
+  flex-basis: 50%;
+  position: relative;
+  z-index: 3;
+}
+
+.col2 {
+  flex-basis: 50%;
+  background-image: url("../public/imgs/heroes_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transform: scale(1.05);
+  animation-name: heroes_img_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes heroes_img_animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.marvel_logo {
+  position: relative;
+  top: calc(50vh - 50px);
+  left: 100vh;
+  padding: 0px;
+  animation-name: marvel_logo_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes marvel_logo_animation {
+  0% {
+    top: calc(50vh - 50px);
+    left: 100vh;
+  }
+  50% {
+    top: calc(50vh - 50px);
+    left: 10vh;
+  }
+  100% {
+    top: 50px;
+    left: 10vh;
+  }
+}
+
+.above_marvel_logo {
+  position: relative;
+  top: 50px;
+  left: 10vh;
+  width: 315px;
+  h2 {
+    color: red;
+  }
+  p {
+    color: gray;
+  }
+  opacity: 0;
+  animation-name: above_marvel_logo_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes above_marvel_logo_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  label,
+  a {
+    color: gray;
+  }
+}
+
+.save_forgot_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.submit_link{
+  color: white !important;
+  text-decoration: none;
+}
+
+.forgot_pass_link {
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-bottom: 10px;
+  border-color: red;
+}
+
+.create_acc_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  *{
+    margin: 3px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
