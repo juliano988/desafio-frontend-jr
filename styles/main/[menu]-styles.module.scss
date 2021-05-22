@@ -1,35 +1,48 @@
-.gradient_effect {
+.container {
   position: fixed;
+  top: 0px;
   z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  transform: scale(1.05);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 45%,
-    rgba(33, 33, 33, 0.9) 70%,
-    rgba(128, 128, 128, 0.2) 100%
-  );
-  margin-top: -10px;
 }
 
-.page_content_div {
+.menu_div {
   display: flex;
-  height: 100vh;
+  align-items: center;
+  margin-left: -7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
   width: 100vw;
+  background-color: black;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: red;
 }
 
-.col1 {
-  flex-basis: 50%;
-  position: relative;
+.menu_div_col1 {
+  flex-basis: 30%;
 }
 
-.col2 {
+.menu_div_col2 {
   flex-basis: 50%;
-  background-image: url("../../public/imgs/heroes_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: scale(1.05);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu_div_col3 {
+  flex-basis: 20%;
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    a{
+      margin-left: 10px;
+      text-decoration: none;
+      color: gray;
+
+    }
+  }
 }
