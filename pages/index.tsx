@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
-import { MarvelLogoRedDiv, MarvelLogoText } from '../styled-components';
+import { LoginCheckInput, LoginTextInput, MarvelLogoRedDiv, MarvelLogoText, SubmitBtn } from '../styled-components';
 
 export default function Home(): JSX.Element {
   return (
@@ -13,15 +13,38 @@ export default function Home(): JSX.Element {
       </Head>
 
       <div className={styles.gradient_effect}></div>
-      
+
       <div className={styles.page_content_div}>
         <div className={styles.col1}>
           <MarvelLogo />
+          <div className={styles.above_marvel_logo}>
+            <h2>Bem-vindo(a) de volta!</h2>
+            <p>Acesse sua conta:</p>
+
+            <form className={styles.login_form}>
+              <LoginTextInput type="text" placeholder="Usuário" />
+              <LoginTextInput type="text" placeholder="Senha" />
+
+              <div className={styles.save_forgot_div}>
+                <div>
+                  <LoginCheckInput id="save" type="checkbox" />
+                  <label htmlFor="save">Salvar login</label>
+                </div>
+                <a className={styles.forgot_pass_link} href="">Esqueci a senha</a>
+              </div>
+
+              <SubmitBtn type="button" >Enviar</SubmitBtn>
+
+              <div className={styles.create_acc_div}>
+                <p>Ainda não tem o login?</p>
+                <a href="" >Cadastre-se</a>
+              </div>
+            </form>
+
+          </div>
         </div>
 
-        <div className={styles.col2}>
-
-        </div>
+        <div className={styles.col2}> </div>
       </div>
 
     </div>
