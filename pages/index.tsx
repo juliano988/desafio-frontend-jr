@@ -34,11 +34,9 @@ export default function Home(): JSX.Element {
                 <a className={styles.forgot_pass_link} href="">Esqueci a senha</a>
               </div>
 
-              <SubmitBtn type="button" >
-                <Link href="/teste">
-                  <a className={styles.submit_link}>Entrar</a>
-                </Link>
-              </SubmitBtn>
+              <Link href="/main">
+                <SubmitBtn type="button" >Entrar</SubmitBtn>
+              </Link>
 
               <div className={styles.create_acc_div}>
                 <p>Ainda não tem o login?</p>

@@ -26,11 +26,13 @@ export const LoginCheckInput = styled.input`
   outline-width: 1px;
 `
 
-export const SubmitBtn = styled.button`
-  height: 55px;
-  color: white;
+export const SubmitBtn = styled.a`
+  text-align: center;
+  color: white !important;
   font-family: Kastelov_Regular;
   font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
   background-color: red;
   border-style: none;
