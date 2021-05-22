@@ -69,32 +69,6 @@
   }
 }
 
-.marvel_logo {
-  position: relative;
-  top: calc(50vh - 50px);
-  left: 100vh;
-  padding: 0px;
-  animation-name: marvel_logo_animation;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-
-@keyframes marvel_logo_animation {
-  0% {
-    top: calc(50vh - 50px);
-    left: 100vh;
-  }
-  50% {
-    top: calc(50vh - 50px);
-    left: 10vh;
-  }
-  100% {
-    top: 50px;
-    left: 10vh;
-  }
-}
-
 .above_marvel_logo {
   position: relative;
   top: 50px;
@@ -119,47 +93,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-.login_form {
-  display: flex;
-  flex-direction: column;
-  label,
-  a {
-    color: gray;
-  }
-}
-
-.save_forgot_div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.submit_link{
-  color: white !important;
-  text-decoration: none;
-}
-
-.forgot_pass_link {
-  text-decoration: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-  margin-bottom: 10px;
-  border-color: red;
-}
-
-.create_acc_div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  *{
-    margin: 3px;
-  }
-  a{
-    text-decoration: none;
   }
 }

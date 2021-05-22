@@ -1,0 +1,25 @@
+.marvel_logo {
+  position: relative;
+  top: calc(50vh - 50px);
+  left: 100vh;
+  padding: 0px;
+  animation-name: marvel_logo_animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes marvel_logo_animation {
+  0% {
+    top: calc(50vh - 50px);
+    left: 100vh;
+  }
+  50% {
+    top: calc(50vh - 50px);
+    left: 10vh;
+  }
+  100% {
+    top: 50px;
+    left: 10vh;
+  }
+}

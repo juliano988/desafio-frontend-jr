@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
-import { LoginCheckInput, LoginTextInput, MarvelLogoRedDiv, MarvelLogoText, SubmitBtn } from '../styled-components/login-sc';
+import LoginForm from '../components/login/LoginForm';
+import MarvelLogo from '../components/login/MarvelLogo';
 import styles from '../styles/login-styles.module.scss'
 
 export default function Login(): JSX.Element {
@@ -21,41 +21,5 @@ export default function Login(): JSX.Element {
         <div className={styles.col2}> </div>
       </div>
     </>
-  )
-}
-
-function MarvelLogo() {
-  return (
-    <div className={styles.marvel_logo}>
-      <MarvelLogoRedDiv>
-        <MarvelLogoText>MARVEL</MarvelLogoText>
-      </MarvelLogoRedDiv>
-    </div>
-  )
-}
-
-function LoginForm() {
-  return (
-    <form className={styles.login_form}>
-      <LoginTextInput type="text" placeholder="Usuário" />
-      <LoginTextInput type="text" placeholder="Senha" />
-
-      <div className={styles.save_forgot_div}>
-        <div>
-          <LoginCheckInput id="save" type="checkbox" />
-          <label htmlFor="save">Salvar login</label>
-        </div>
-        <a className={styles.forgot_pass_link} href="">Esqueci a senha</a>
-      </div>
-
-      <Link href="/main">
-        <SubmitBtn type="button" >Entrar</SubmitBtn>
-      </Link>
-
-      <div className={styles.create_acc_div}>
-        <p>Ainda não tem o login?</p>
-        <a href="" >Cadastre-se</a>
-      </div>
-    </form>
   )
 }
