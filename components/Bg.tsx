@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/components/[menu]/Bg-styles.module.scss'
+import styles from '../styles/components/Bg-styles.module.scss'
 
 export default function Bg(): JSX.Element {
 

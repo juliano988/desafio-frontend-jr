@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import styles from '../../styles/components/login/LoginForm-styles.module.scss'
-import { LoginCheckInput, LoginTextInput, SubmitBtn } from "../../styled-components/login-sc";
+import styles from '../styles/components/LoginForm-styles.module.scss';
+import { LoginCheckInput, LoginTextInput, SubmitBtn } from "../styled-components/login-sc";
 
 
 export default function LoginForm():JSX.Element {

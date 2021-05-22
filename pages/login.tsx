@@ -1,6 +1,6 @@
 import React from 'react';
-import LoginForm from '../components/login/LoginForm';
-import MarvelLogo from '../components/login/MarvelLogo';
+import LoginForm from '../components/LoginForm';
+import MarvelLogo from '../components/MarvelLogo';
 import styles from '../styles/login-styles.module.scss'
 
 export default function Login(): JSX.Element {
