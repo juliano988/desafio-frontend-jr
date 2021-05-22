@@ -18,7 +18,7 @@ export default function LoginForm():JSX.Element {
         <a className={styles.forgot_pass_link} href="">Esqueci a senha</a>
       </div>
 
-      <Link href="/main">
+      <Link href="/main/chars">
         <SubmitBtn type="button" >Entrar</SubmitBtn>
       </Link>
 
