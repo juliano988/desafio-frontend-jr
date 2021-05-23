@@ -23,3 +23,25 @@ export const MenuLink = styled.div`
     cursor: pointer;
   }
 `;
+
+export const NavLeftArrow = styled.div`
+  position: fixed;
+  top: 50vh;
+  left: 20px;
+  cursor: pointer;
+  span{
+    color: red;
+    font-size: 50px
+  }
+`;
+
+export const NavRightArrow = styled.div`
+  position: fixed;
+  top: 50vh;
+  right: 20px;
+  cursor: pointer;
+  span{
+    color: red;
+    font-size: 50px;
+  }
+`;
