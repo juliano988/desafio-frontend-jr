@@ -1,7 +1,7 @@
 .marvel_logo {
   position: relative;
   top: calc(50vh - 50px);
-  left: 100vh;
+  left: calc(100vh - 50px);
   padding: 0px;
   animation-name: marvel_logo_animation;
   animation-duration: 2s;
@@ -12,7 +12,7 @@
 @keyframes marvel_logo_animation {
   0% {
     top: calc(50vh - 50px);
-    left: 100vh;
+    left: calc(100vh - 50px);
   }
   50% {
     top: calc(50vh - 50px);

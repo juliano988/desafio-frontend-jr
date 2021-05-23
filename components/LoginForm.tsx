@@ -8,7 +8,7 @@ export default function LoginForm():JSX.Element {
   return (
     <form className={styles.login_form}>
       <LoginTextInput type="text" placeholder="Usuário" />
-      <LoginTextInput type="text" placeholder="Senha" />
+      <LoginTextInput type="password" placeholder="Senha" />
 
       <div className={styles.save_forgot_div}>
         <div>
