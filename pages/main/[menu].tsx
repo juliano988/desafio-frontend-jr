@@ -1,16 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../styles/main/[menu]-styles.module.scss';
 import { useRouter } from 'next/router'
 import Bg from '../../components/Bg';
 import { MarvelLogoSmall, MenuLink } from '../../styled-components/[menu]-sc';
 import Link from 'next/link';
 import CharsSection from '../../components/CharsSection';
+import MoviesSection from '../../components/MoviesSection';
 
 export default function Main(): JSX.Element {
 
   const { menu } = useRouter().query;
 
-  console.log(menu)
+  const [selectedSection, setselectedSection] = useState<JSX.Element>();
+
+  useEffect(function () {
+    switch (menu) {
+      case 'chars': setselectedSection(<CharsSection />); break;
+      case 'movies': setselectedSection(<MoviesSection />); break;
+      default: setselectedSection(<CharsSection />); break;
+    }
+  },[menu])
 
   return (
     <>
@@ -40,7 +49,7 @@ export default function Main(): JSX.Element {
             </div>
           </div>
         </div>
-        <CharsSection/>
+        {selectedSection}
       </div>
     </>
   )
