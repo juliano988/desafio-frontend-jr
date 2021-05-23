@@ -45,7 +45,7 @@
     margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: justify;
     cursor: pointer;
   }
@@ -68,4 +68,21 @@
 .full_description_content{
   padding-left: 30px;
   padding-top: 10px;
+  h3 , h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  li{
+    margin-left: -25px;
+  }
+}
+
+.close_btn{
+  position: absolute;
+  left: 215px;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
