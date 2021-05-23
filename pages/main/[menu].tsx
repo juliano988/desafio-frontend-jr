@@ -6,6 +6,7 @@ import { MarvelLogoSmall, MenuLink } from '../../styled-components/[menu]-sc';
 import Link from 'next/link';
 import CharsSection from '../../components/CharsSection';
 import MoviesSection from '../../components/MoviesSection';
+import HqsSection from '../../components/HqsSection';
 
 export default function Main(): JSX.Element {
 
@@ -17,6 +18,7 @@ export default function Main(): JSX.Element {
     switch (menu) {
       case 'chars': setselectedSection(<CharsSection />); break;
       case 'movies': setselectedSection(<MoviesSection />); break;
+      case 'hqs': setselectedSection(<HqsSection />); break;
       default: setselectedSection(<CharsSection />); break;
     }
   },[menu])
