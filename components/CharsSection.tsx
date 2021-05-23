@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import { NavLeftArrow, NavRightArrow } from '../styled-components/[menu]-sc';
 import styles from '../styles/components/CharsSection-styles.module.scss';
 import CharsCard from './CharsCard';
 
 export default function CharsSection(): JSX.Element {
 
+  const page = Number(useRouter().query.page);
+
   const [charsCards, setcharsCards] = useState<Array<typeof CharsCard>>([]);
   const [pageCount, setpageCount] = useState<number>(1);
+
+  useEffect(function(){
+    setpageCount(page);
+  },[page]);
 
   useEffect(function () {
     const tempArr = [
@@ -65,8 +72,8 @@ export default function CharsSection(): JSX.Element {
 
   function handleArrowClick(direc: string) {
     switch (direc) {
-      case 'L': setpageCount(pageCount - 1); break;
-      case 'R': setpageCount(pageCount + 1); break;
+      case 'L': window.location.href="/main/chars?page="+(pageCount - 1); break;
+      case 'R': window.location.href="/main/chars?page="+(pageCount + 1); break;
       default: break;
     }
   }

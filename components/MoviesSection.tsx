@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import { NavLeftArrow, NavRightArrow } from '../styled-components/[menu]-sc';
 import styles from '../styles/components/MoviesSection-styles.module.scss';
@@ -5,8 +6,14 @@ import MoviesCard from './MoviesCard';
 
 export default function MoviesSection(): JSX.Element {
 
+  const page = Number(useRouter().query.page);
+
   const [moviesCards, setmoviesCards] = useState<Array<typeof MoviesCard>>([]);
   const [pageCount, setpageCount] = useState<number>(1);
+
+  useEffect(function(){
+    setpageCount(page);
+  },[page]);
 
   useEffect(function () {
     const tempArr = [
@@ -71,8 +78,8 @@ export default function MoviesSection(): JSX.Element {
 
   function handleArrowClick(direc: string) {
     switch (direc) {
-      case 'L': setpageCount(pageCount - 1); break;
-      case 'R': setpageCount(pageCount + 1); break;
+      case 'L': window.location.href="/main/movies?page="+(pageCount - 1); break;
+      case 'R': window.location.href="/main/movies?page="+(pageCount + 1); break;
       default: break;
     }
   }

@@ -35,13 +35,13 @@ export default function Main(): JSX.Element {
           </div>
           <nav className={styles.menu_div_col2}>
             <MenuLink>
-              <Link href="/main/chars"><p style={{ color: (menu !== 'chars' ? 'gray' : '') }}>Personagens</p></Link>
+              <Link href="/main/chars?page=1"><p style={{ color: (menu !== 'chars' ? 'gray' : '') }}>Personagens</p></Link>
             </MenuLink>
             <MenuLink>
-              <Link href="/main/movies"><p style={{ color: (menu !== 'movies' ? 'gray' : '') }}>Filmes</p></Link>
+              <Link href="/main/movies?page=1"><p style={{ color: (menu !== 'movies' ? 'gray' : '') }}>Filmes</p></Link>
             </MenuLink>
             <MenuLink>
-              <Link href="/main/hqs"><p style={{ color: (menu !== 'hqs' ? 'gray' : '') }}>HQs</p></Link>
+              <Link href="/main/hqs?page=1"><p style={{ color: (menu !== 'hqs' ? 'gray' : '') }}>HQs</p></Link>
             </MenuLink>
           </nav>
           <div className={styles.menu_div_col3}>
