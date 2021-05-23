@@ -39,10 +39,14 @@ export default function CharsCard(props: { charImg: string, charName: string, ch
           <div className={styles.full_description_content}>
             <span onClick={handleClick} className={styles.close_btn} >ⓧ</span>
             <h3>{props.charName}</h3>
-            <h4>Aparições:</h4>
-            {props.charAppearances}
-            <h4>Avaliações dos Fãs:</h4>
-            {starsArr}
+            <div>
+              <h4>Aparições:</h4>
+              {props.charAppearances}
+            </div>
+            <div>
+              <h4>Avaliações dos Fãs:</h4>
+              {starsArr}
+            </div>
           </div>
         </div>
       </div>

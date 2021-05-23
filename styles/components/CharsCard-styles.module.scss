@@ -66,8 +66,10 @@
 }
 
 .full_description_content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding-left: 30px;
-  padding-top: 10px;
   h3 , h4{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -77,6 +79,9 @@
   }
   li{
     margin-left: -25px;
+  }
+  div:last-child{
+    margin-top: auto;
   }
 }
 

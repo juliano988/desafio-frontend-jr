@@ -40,7 +40,7 @@ export default function CharsSection(): JSX.Element {
             <li>Vingadores - Guerra Infinita</li>
             <li>Vingadores - Ultimato</li>
           </ul>}
-          fansRate={4}
+          fansRate={5}
         />
       </div>
     </section>
