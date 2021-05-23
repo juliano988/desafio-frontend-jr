@@ -25,7 +25,7 @@ export default function MoviesCard(props: { movieImg: string, charName: string, 
 
   return (
     <>
-      <div style={{ display: (showGradient ? 'initial' : 'none'), zIndex: (showGradient ? 10 : 'initial') }} className={styles.gradient}></div>
+      <div onClick={handleClick} style={{ display: (showGradient ? 'initial' : 'none'), zIndex: (showGradient ? 10 : 'initial') }} className={styles.gradient}></div>
       <div className={styles.card_content}>
         <div style={{ zIndex: (showGradient ? 15 : 'initial') }} className={styles.main_content}>
           <img className={styles.char_img} src={props.movieImg}></img>
