@@ -1,4 +1,23 @@
-.container{
+.gradient{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 45%,
+    rgba(33, 33, 33, 0.9) 70%,
+    rgba(128, 128, 128, 0.2) 100%
+  );
+}
+
+.card_content{
+  display: flex;
+}
+
+.main_content{
   height: 400px;
   width: 250px;
   border-radius: 30px;
@@ -28,9 +47,25 @@
     padding-right: 10px;
     font-size: 0.8rem;
     text-align: justify;
+    cursor: pointer;
   }
   p:last-child{
     margin-top: auto;
     margin-bottom: 20px;
   }
+}
+
+.full_description{
+  position: relative;
+  right: 20px;
+  height: 400px;
+  width: 250px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(61,0,0,1) 100%);
+}
+
+.full_description_content{
+  padding-left: 30px;
+  padding-top: 10px;
 }

@@ -7,10 +7,20 @@ export default function CharsSection(): JSX.Element {
     <section className={styles.container}>
       <div className={styles.centralizing_div}>
         <CharsCard
-         charImg='/imgs/homem-aranha.png'
-         charName='Homem-Aranha'
-         charDescription='Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.'
-         />
+          charImg='/imgs/homem-aranha.png'
+          charName='Homem-Aranha'
+          charDescription='Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.'
+        />
+        <CharsCard
+          charImg='/imgs/homem-aranha.png'
+          charName='Homem-Aranha'
+          charDescription='Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.'
+        />
+        <CharsCard
+          charImg='/imgs/homem-aranha.png'
+          charName='Homem-Aranha'
+          charDescription='Após ser mordido por uma aranha radioativa, Peter Parker se torna o amigo da vizinhança, o Homem-Aranha.'
+        />
       </div>
     </section>
   )
